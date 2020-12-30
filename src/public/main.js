@@ -23,7 +23,7 @@ const suscripcion = async () => {
         userVisibleOnly: true,
         applicationServerKey: urlBase64ToUint8Array(PUBLIC_VAPID_KEY)
     })
-
+    console.log(JSON.stringify(suscripcion))
     await fetch('/suscripcion', {
         method: 'POST',
         body: JSON.stringify(suscripcion),
