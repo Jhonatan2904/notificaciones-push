@@ -15,8 +15,8 @@ const PUBLIC_VAPID_KEY = 'BPRmo2-NV3zpItA9hmO9pFsx4J8OdKfQPuGZs3aw1_jlKvSzHBPCfm
 
 const suscripcion = async () => {
 
-    const register = await navigator.serviceWorker.register('/src/public/serviceWorker.js', {
-            scope: '/src/public/'
+    const register = await navigator.serviceWorker.register('https://jhonatan2904.github.io/notificaciones-push/src/public/serviceWorker.js', {
+            scope: '/'
     })
 
     const suscripcion = await register.pushManager.subscribe({
