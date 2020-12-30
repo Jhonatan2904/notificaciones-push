@@ -6,6 +6,7 @@ let pushSuscripcion
 
 router.post('/suscripcion', async (req, res) => {
     //punto a donde se enviará la notificacion
+    console.log("Recibiendo informacion.")
     console.log(req.body)
     pushSuscripcion = req.body
     res.status(200).json()
